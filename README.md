@@ -12,7 +12,7 @@ yum install -y ppp iptables make gcc gmp-devel xmlto bison flex xmlto libpcap-de
 #### 安装Openswan
 
 ```bash
-wget http://download.openswan.org/openswan/openswan-2.6.38.tar.gz
+wget https://download.openswan.org/openswan/old/openswan-2.6/openswan-2.6.38.tar.gz
 tar zxvf openswan-2.6.38.tar.gz
 cd openswan-2.6.38
 make programs install
