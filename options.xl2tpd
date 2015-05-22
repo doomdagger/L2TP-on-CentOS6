@@ -1,0 +1,27 @@
+require-mschap-v2
+ipcp-accept-local
+ipcp-accept-remote
+ms-dns	8.8.4.4
+ms-dns  8.8.8.8
+# ms-dns  192.168.1.1
+# ms-dns  192.168.1.3
+# ms-wins 192.168.1.2
+# ms-wins 192.168.1.4
+noccp
+auth
+crtscts
+idle 1800
+mtu 1410
+mru 1410
+nodefaultroute
+debug
+lock
+proxyarp
+connect-delay 5000
+# To allow authentication against a Windows domain EXAMPLE, and require the
+# user to be in a group "VPN Users". Requires the samba-winbind package
+# require-mschap-v2
+# plugin winbind.so
+# ntlm_auth-helper '/usr/bin/ntlm_auth --helper-protocol=ntlm-server-1 --require-membership-of="EXAMPLE\\VPN Users"' 
+# You need to join the domain on the server, for example using samba:
+# http://rootmanager.com/ubuntu-ipsec-l2tp-windows-domain-auth/setting-up-openswan-xl2tpd-with-native-windows-clients-lucid.html
