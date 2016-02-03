@@ -60,9 +60,9 @@ $VPS_IP %any: PSK "$PASS"
 #### 安装xL2TPD
 在CentOS 6官方的yum源中，没有这个软件包。需要安装fedora的epel源。
 ```bash
-# 32位用户使用此命令: rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-7.noarch.rpm
+# 32位用户使用此命令: rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
 # 64位用户命令如下
-rpm -Uvh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-7.noarch.rpm
+rpm -Uvh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 yum install xl2tpd -y
 ```
 > 如果上面这个安装地址如果不对了。参照这个fedora epel 的[faq页](https://fedoraproject.org/wiki/EPEL/FAQ/zh-cn#How_can_I_install_the_packages_from_the_EPEL_software_repository.3F)。
